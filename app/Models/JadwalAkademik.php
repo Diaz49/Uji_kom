@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Jadwal_akademik extends Model
+class JadwalAkademik extends Model
 {
     protected $table = 'jadwal_akademik';
     protected $fillable = ['hari', 'Kode_mk', 'id_ruang', 'id_Gol'];

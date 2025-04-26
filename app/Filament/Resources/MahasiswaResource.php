@@ -62,19 +62,6 @@ class MahasiswaResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('no')
-                ->label('No')
-                ->getStateUsing(function ($record, $livewire) {
-                    // Mengambil halaman aktif dan jumlah data per halaman dari Livewire
-                    $currentPage = $livewire->getTablePage(); // Halaman aktif saat ini
-                    $perPage = $livewire->getTableRecordsPerPage(); // Jumlah data per halaman
-
-                    // Menghitung nomor urut
-                    $startIndex = ($currentPage - 1) * $perPage + 1;
-                    
-                    // Menampilkan nomor urut
-                    return $startIndex + (int)$record->getKey(); // Menggunakan record key untuk menghitung nomor urut
-                }),
                 TextColumn::make('NIM')->sortable()->searchable(),
                 TextColumn::make('Nama')->sortable()->searchable(),
                 TextColumn::make('Alamat')->limit(50),

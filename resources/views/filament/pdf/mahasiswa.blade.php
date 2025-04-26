@@ -32,7 +32,10 @@
             <tr>
                 <th>NIM</th>
                 <th>Nama</th>
+                <th>Alamat</th>
+                <th>No Hp</th>
                 <th>Semester</th>
+                <th>Golongan</th>
             </tr>
         </thead>
         <tbody>
